@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to right , #112d4e, #1c3d65, #284e7d, #336096, #3f72af);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    align-items: center;
+}
+
+.head h2 {
+    color: #112D4E;
+}
