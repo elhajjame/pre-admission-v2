@@ -6,27 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form clinic app</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 
 <body>
+    <div class="blur">
+    </div>
     <div class="all-content">
         <section class="top">
+            <div class="title">
+                <h2>Take appointment</h2>
+                <h6>Schedule your medical appointment in seconds</h6>
+            </div>
             <form action="#">
-                <div class="head">
-                    <h2>Take appointment</h2>
-                    <h6>Schedule your medical appointment in seconds</h6>
-                </div>
-                <div class="left-side">
-                    <input type="text" placeholder="Full name">
-                    <input type="text" placeholder="Email address">
-                    <input type="date">
-                </div>
-                <div class="right-side">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="Motif">
-                    <input type="submit" placeholder="Take appointment">
-                </div>
+                <input class="input-box" type="text" placeholder="Full name">
+                <input class="input-box" type="text" placeholder="Email address">
+                <input class="input-box" type="text" placeholder="Phone">
+                <input class="input-box" type="text" placeholder="Motif">
+                <input class="input-box" type="date">
+                <input class="input-box submit-btn" type="submit" value="Take appointment">
+
             </form>
+        </section>
+        <section class="bottom">
+            <header class="header-container">
+                <h2>Appointment</h2>
+                <input class="search-input" placeholder="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Motif</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>example@mail.com</td>
+                        <td>06-xxxxxxxx</td>
+                        <td>radiology</td>
+                        <td>01/01/2026</td>
+                        <td><span class="material-symbols-outlined">
+                                delete
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>example@mail.com</td>
+                        <td>06-xxxxxxxx</td>
+                        <td>radiology</td>
+                        <td>01/01/2026</td>
+                        <td><span class="material-symbols-outlined">
+                                delete
+                            </span></td>
+                    </tr>
+                </tbody>
+
+            </table>
         </section>
     </div>
     <script src="script.js"></script>
