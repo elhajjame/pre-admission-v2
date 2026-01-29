@@ -81,6 +81,10 @@ form {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+    font-weight: 900;
+    color: #0b1f39;
 }
 
 .bottom {
@@ -99,9 +103,10 @@ table {
     border-collapse: collapse;
 }
 
-tr{
-    border-bottom: 1px solid #ddd ;
+tr {
+    border-bottom: 1px solid #ddd;
 }
+
 th,
 td {
     /* border: 1px solid #ddd; */
@@ -110,19 +115,7 @@ td {
 }
 
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 13px;
-
-}
-
-.header-container {
-    font-weight: 900;
-    color: #0b1f39;
-}
-
+/* search styling */
 .search-con {
     width: 35%;
     position: relative;
@@ -145,6 +138,67 @@ td {
     font-weight: 700;
 }
 
-.all-content {}
-
 /*================= responsive ================ */
+
+/* tablet */
+@media (max-width: 767px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        width: 300px;
+        margin: 15px auto 0;
+    }
+
+    .top form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    table {
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    table thead tr {
+        display: none;
+    }
+
+    table tr {
+        display: block;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 1em
+    }
+
+    table td::before {
+        content: attr(data-title) ": ";
+        float: left;
+        font-weight: 800;
+    }
+
+    th,
+    td {
+        padding: 0 20px 0;
+        margin-top: 0;
+
+    }
+
+    .header-container h2 {
+        display: none;
+    }
+
+    .search-con {
+        width: 100%;
+    }
+}
