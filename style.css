@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-image: linear-gradient(to left bottom, #112d4e, #1c3d65, #284e7d, #336096, #3f72af);
+    /* background-image: linear-gradient(to left bottom, #112d4e, #1c3d65, #284e7d, #336096, #3f72af); */
+    background-image: linear-gradient(to left bottom, #0077b6, #0083be, #008ec5, #009acb, #00a5d1, #28afd6, #3eb9da, #51c3df, #6fcee5, #89d9eb, #a0e3f2, #b7eef9);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -97,6 +98,7 @@ form {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     border: 1px solid #ffffffba;
+    padding-bottom: 0;
 }
 
 table {
@@ -152,6 +154,13 @@ tbody tr td span {
     transform: translateY(-50%);
     font-size: 20px;
     font-weight: 700;
+}
+
+.count {
+    padding-top: 10px;
+    display: block;
+    padding-left: 10px;
+    font-weight: 800;
 }
 
 /*================= responsive ================ */

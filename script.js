@@ -1,4 +1,3 @@
-
 const formEL = document.querySelector('.form');
 const nameEl = document.querySelector('#name');
 const emailEL = document.querySelector('#email');
@@ -32,6 +31,12 @@ data.push(
   }
 );
 
+function appointmentNumber() {
+  const appointmentNum = document.querySelector('.count');
+  appointmentNum.textContent = `Total appointments: ${data.length}`;
+  console.log('hhhhhhhhhhhhhhh',data.length);
+}
+appointmentNumber()
 formEL.addEventListener('submit', submitAppointment);
 
 function submitAppointment(e) {
@@ -64,6 +69,7 @@ function submitAppointment(e) {
       visitDate: date
     });
     renderAppointments(data);
+    appointmentNumber()
   }
 }
 function renderAppointments(list) {
@@ -81,11 +87,11 @@ function renderAppointments(list) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <tr>
-              <td>${element.name}</td>
-              <td>${element.phone}</td>
-              <td>${element.email}</td>
-              <td>${element.motif}</td>
-              <td>${element.visitDate}</td>
+              <td data-title="Name">${element.name}</td>
+              <td data-title="Phone">${element.phone}</td>
+              <td data-title="Email">${element.email}</td>
+              <td data-title="Motif">${element.motif}</td>
+              <td data-title="Date">${element.visitDate}</td>
               <td data-title="Action"><span class="material-symbols-outlined"
               onClick="deleteItem(${index})"
               >
@@ -101,7 +107,7 @@ function renderAppointments(list) {
 function deleteItem(index) {
   data.splice(index, 1);
   renderAppointments(data);
-  console.log('click');
+  appointmentNumber()
 }
 
 const searchEl = document.querySelector('.search-input');
