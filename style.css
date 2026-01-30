@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    /* background-image: linear-gradient(to left bottom, #112d4e, #1c3d65, #284e7d, #336096, #3f72af); */
-    background-image: linear-gradient(to left bottom, #0077b6, #0083be, #008ec5, #009acb, #00a5d1, #28afd6, #3eb9da, #51c3df, #6fcee5, #89d9eb, #a0e3f2, #b7eef9);
+    background-image: linear-gradient(to left bottom, #112d4e, #1c3d65, #284e7d, #336096, #3f72af);
+    /* background-image: linear-gradient(to left bottom, #0077b6, #0083be, #008ec5, #009acb, #00a5d1, #28afd6, #3eb9da, #51c3df, #6fcee5, #89d9eb, #a0e3f2, #b7eef9); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,6 +17,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+
+
 }
 
 .blur {
@@ -33,12 +35,13 @@ body {
 
 .title {
     text-align: center;
-    color: #0b1f39;
+    color: #0d2748;
+    /* color: #fff */
 }
 
 .title h2 {
     font-weight: 900;
-
+    color: #122741;
 }
 
 .title h6 {
