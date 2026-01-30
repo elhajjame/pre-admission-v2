@@ -5,7 +5,7 @@ Pré-admission v2 is a modern and responsive web page for managing clinic pre-ad
 It improves the UI and UX of the existing version while keeping the same core features: add, display, search/filter, and delete requests.
 
 <p align="center">
-  <img src="desktop.png" width="900" height: "100">
+  <img src="desktop.png" width="900" height="300"/>
 </p>
 
 <p align="center">
