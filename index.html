@@ -21,12 +21,12 @@
                 <h2>Take appointment</h2>
                 <h6>Schedule your medical appointment in seconds</h6>
             </div>
-            <form action="#">
-                <input class="input-box" type="text" placeholder="Full name">
-                <input class="input-box" type="text" placeholder="Email address">
-                <input class="input-box" type="text" placeholder="Phone">
-                <input class="input-box" type="text" placeholder="Motif">
-                <input class="input-box" type="date">
+            <form class="form" action="#">
+                <input id="name" class="input-box" type="text" placeholder="Full name">
+                <input id="email" class="input-box" type="text" placeholder="Email address">
+                <input id="phone-number" class="input-box" type="text" placeholder="Phone">
+                <input id="motif" class="input-box" type="text" placeholder="Motif">
+                <input id="date" class="input-box" type="date">
                 <input class="input-box submit-btn" type="submit" value="Take appointment">
 
             </form>
@@ -52,14 +52,14 @@
                         <th data-title="Action">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="tbody-con">
                     <tr>
                         <td data-title="name">mehdi</td>
                         <td data-title="Email">example@mail.com</td>
                         <td data-title="Phone">06-xxxxxxxx</td>
                         <td data-title="Motif">radiology</td>
                         <td data-title="Date">01/01/2026</td>
-                        <td data-title="Action"><span class="material-symbols-outlined">
+                        <td data-title="Action"><span id="delete-btn" class="material-symbols-outlined">
                                 delete
                             </span></td>
                     </tr>
