@@ -63,25 +63,21 @@ function submitAppointment(e) {
       motif: motif,
       visitDate: date
     });
-
-    console.log(data);
-
+    renderAppointments(data);
   }
-  renderAppointments();
 }
-renderAppointments()
-function renderAppointments() {
+function renderAppointments(list) {
   console.log('test');
   const tbodyCon = document.querySelector('.tbody-con');
   tbodyCon.innerHTML = "";
-  if (data.length === 0) {
+  if (!list || data.length === 0) {
     tbodyCon.innerHTML = `
             <tr>
                 <td colspan="6" id="test">No appointments at the moment</td>
             </tr>
         `;
   } else {
-    data.forEach((element, index) => {
+    list.forEach((element, index) => {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <tr>
@@ -104,7 +100,24 @@ function renderAppointments() {
 
 function deleteItem(index) {
   data.splice(index, 1);
-  renderAppointments();
+  renderAppointments(data);
   console.log('click');
 }
 
+const searchEl = document.querySelector('.search-input');
+function searchItem() {
+  const searchValue = searchEl.value.toLowerCase();
+  const results = data.filter(item => {
+    return (
+      item.name.toLowerCase().includes(searchValue) ||
+      item.phone.toLowerCase().includes(searchValue) ||
+      item.email.toLowerCase().includes(searchValue)
+    );
+  })
+
+  console.log(results);
+  renderAppointments(results)
+}
+searchEl.addEventListener('input', searchItem);
+
+renderAppointments(data)
